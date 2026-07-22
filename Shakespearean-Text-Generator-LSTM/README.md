@@ -1,6 +1,6 @@
 # Shakespearean Text Generator (LSTM)
 
-[![ Shakespearean Text Generator Demo](https://img.shields.io/badge/demo-animal--classifier-blue)](https://shakespearean-text-generator.streamlit.app/)
+[![ Shakespearean Text Generator Demo](https://img.shields.io/badge/demo-Shakespearean--Text--Generator-blue)](https://shakespearean-text-generator.streamlit.app/)
 
 ##  Project Overview
 This project uses **LSTMs (Long Short-Term Memory networks)** to generate creative text. By training on Shakespeare's corpus, the model learns character-level patterns, allowing it to predict the most likely "next character" in a sequence.

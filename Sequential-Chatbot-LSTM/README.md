@@ -1,6 +1,6 @@
 # Sequential Chatbot
 
-[![Sequential Chatbot Demo](https://img.shields.io/badge/demo-animal--classifier-blue)](https://sequential-chatbot-lstm.streamlit.app/)
+[![Sequential Chatbot Demo](https://img.shields.io/badge/demoSequential--Chatbot-blue)](https://sequential-chatbot-lstm.streamlit.app/)
 
 ##  Project Overview
 A chatbot designed to process user inputs sequentially and generate appropriate responses, demonstrating foundational mechanics of conversational AI.
