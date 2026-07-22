@@ -3,6 +3,7 @@ import pickle
 import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+import os
 
 
 st.set_page_config(
@@ -35,18 +36,24 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+base_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(base_dir, "Chatbot.keras")
+tokenizer_path = os.path.join(base_dir, "tokenizer.pkl")
+encoder_path = os.path.join(base_dir, "encoder.pkl")
+
+
 @st.cache_resource
 def get_model():
-    return load_model("Chatbot.keras")
+    return load_model(model_path)
 
 @st.cache_resource
 def get_tokenizer():
-    with open("tokenizer.pkl", "rb") as f:
+    with open(tokenizer_path, "rb") as f:
         return pickle.load(f)
 
 @st.cache_resource
 def get_encoder():
-    with open("encoder.pkl", "rb") as f:
+    with open(encoder_path, "rb") as f:
         return pickle.load(f)
 
 model = get_model()
